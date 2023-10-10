@@ -121,7 +121,7 @@ namespace Azure.ResourceManager.Compute
         /// <summary> The disks sku name. Can be Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, or PremiumV2_LRS. </summary>
         public DiskSku Sku { get; set; }
         /// <summary> The Logical zone list for Disk. </summary>
-        public IList<string> Zones { get; }
+        public IList<string> Zones { get; set; }
         /// <summary> The extended location where the disk will be created. Extended location cannot be changed. </summary>
         public ExtendedLocation ExtendedLocation { get; set; }
         /// <summary> The time when the disk was created. </summary>
